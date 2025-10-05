@@ -76,7 +76,7 @@ const Comments = () => {
                             <p className={s.CommentTextStyle}>{e.Text}</p>
                             <div className={s.RateBlock}>
                                 {Array.from({ length: e.Rate }, (_, i) => (
-                                        <li key={i} className={s.Star}><FaStar/></li>
+                                        <li key={i} className={s.Star}>{FaStar && <FaStar />}</li>
                                 ))}
                             </div>
                         </div>
