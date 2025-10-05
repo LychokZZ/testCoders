@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import s from './Description.module.scss';
 
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { GoPlus } from "react-icons/go";
+
 import Calendar from './Calendar';
 
 const Description = () => {

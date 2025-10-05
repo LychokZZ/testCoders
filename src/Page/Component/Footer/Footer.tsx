@@ -1,4 +1,4 @@
-import { link } from 'fs';
+
 import s from './Footer.module.scss';
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -9,6 +9,7 @@ import { FaBasketball } from "react-icons/fa6";
 
 import { MdOutlinePhone } from "react-icons/md";
 import { TbMail } from "react-icons/tb";
+
 import { useEffect, useState } from 'react';
 
 const Footer = () => {
