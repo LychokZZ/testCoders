@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import s from './Comments.module.scss';
 
-import { FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa6";
 
 import { CommentsArray } from '../../Add/Coments';
 import {CommentsType} from '../../Add/Coments';
