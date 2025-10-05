@@ -1,0 +1,378 @@
+.DescriptionContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+.DescriptionBlockTransfer{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+.SocialsButtons{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 15px;
+    border: #4640DE 2px solid;
+    color: #4640DE;
+
+}
+.AllCountryFlex{
+    width: 25%;
+    margin-left: -16%;
+}
+.SocialsBlockButton{
+    display: flex;
+    width: 103%;
+    justify-content: space-between;
+}
+.PhotoContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.PhotoStyle{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 10% 78%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+.PhotoStyle2{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 10% 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+
+
+.TitleStyleTransfer{
+    color: #25324B;
+    font-size: 32px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.DescriptionStyleTransfer{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #606060;
+    line-height: 24px;
+    text-align: justify;
+    
+}
+
+.TitleCountry{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #25324B;
+}
+.FlagStyle{
+    width: 42px;
+    height: 28px;
+    margin-right: 10px;
+}
+.CountryCard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+
+    color: #25324B;
+}
+.AllCountryButton{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #4640DE;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+}
+.IconAllCountry{
+    margin-left: 15px;
+    font-size: 20px;
+}
+.LineBottom{
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.CountriesBlock{
+    width: 50%;
+}
+.CalendarBlock{
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ButtonBuy{
+    margin: 20px;
+    width: 80%;
+    background-color: transparent;
+    border: #4640DE 2px solid ;
+    color: #4640DE;
+
+    padding: 10px 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+@media (max-width: 880px) {
+    .DescriptionContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .DescriptionBlockTransfer{
+        width: 90%;
+        height: 70%;
+        padding: 20px;
+
+    }
+    .SocialsBlockButton{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: space-between;
+    }
+    .AllCountryFlex{
+        width: 90%;
+        margin-left: 0%;
+        padding: 20px;
+    }
+    .CountriesBlock{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 0fr);
+        gap: 5px;
+    }
+}
+
+
+
+.cal {
+    width: 340px;
+    color: #1e1e2d;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.title { 
+    font-weight: 700; 
+    letter-spacing: .5px; 
+}
+
+.nav {
+     background: transparent;
+    border: 0;
+    font-size: 20px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.week, .grid {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     gap: 6px;
+}
+
+.weekday {
+    text-align: center;
+     font-size: 12px;
+     color: #97a0af;
+     padding: 6px 0;
+}
+
+.cell {
+     position: relative;
+    height: 44px;
+    border-radius: 10px;
+    border: 0;
+    background: #f7f8fa;
+    cursor: default;
+    transition: transform .06s ease, background .2s ease;
+}
+
+.cell:not([disabled]) { 
+    cursor: pointer; 
+}
+.cell:not([disabled]):active { 
+    transform: scale(.98); 
+}
+
+.isMuted { 
+    opacity: .45; 
+}
+.isBooked { 
+    background: #eef0ff; 
+}
+
+.day {
+     position: absolute;
+     left: 8px;
+     top: 6px;
+     font-weight: 600;
+     font-size: 14px;
+}
+
+.dot {
+     position: absolute;
+     right: 8px;
+     bottom: 6px;
+     width: 8px; height: 8px;
+     border-radius: 50%;
+     background: #5843ff;
+}
+
+.backdrop {
+    position: fixed; 
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    width: min(520px, 92vw);
+    background: #fff;
+    border-radius: 16px;
+     padding: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.modalHead {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 8px;
+}
+.modalTitle { 
+    font-weight: 700; 
+}
+.close {
+    background: transparent; 
+    border: 0; 
+    font-size: 20px; 
+    cursor: pointer;
+}
+
+.list { 
+    display: grid; 
+    gap: 12px; 
+    margin: 12px 0; 
+}
+
+.driver {
+  display: flex; 
+  gap: 12px; 
+  align-items: center;
+  padding: 8px; 
+  border-radius: 12px; 
+  background: #f7f8fa;
+}
+
+.avatar { 
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    background: #e6e8ef; 
+    flex: none; }
+.avatar img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.placeholder { 
+    width: 100%; 
+    height: 100%; 
+}
+
+.info { 
+    display: grid; 
+    gap: 2px; 
+}
+.name { 
+    font-weight: 600; 
+}
+.exp { 
+    font-size: 12px; 
+    color: #6b7280; 
+}
+
+.modalFoot { 
+    display: flex; 
+    justify-content: flex-end; 
+}
+.primary {
+  padding: 8px 14px; 
+  border-radius: 10px;
+  background: #5843ff; 
+  color: #fff; 
+  border: 0; 
+  cursor: pointer;
+}
+
+
+@media (max-width: 880px) {
+  .cal {
+     width: 100%; }
+  .cell { 
+    height: 40px; }
+}

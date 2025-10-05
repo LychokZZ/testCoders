@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,600&display=swap');
+
+
+.HeaderContainer{
+    width: 100%;
+    height: 8vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #fff;
+    color: #515B6F;
+    font-size: 24px;
+    position: relative;
+
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.ButtonNonActive{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: #515B6F;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    transition: all 0.3s ease;
+    &:hover{
+        cursor: pointer;
+        color: #7976d5;
+    }
+}
+.ButtonActive{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #4640DE;
+    color: #4640DE;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.RegBlockContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.StyleLine{
+    width: 1px;
+    height: 60%;
+    background-color: #C4C4C4;
+}
+.CreateProfile{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    color: #4640DE;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    transition: all 0.3s ease;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+.LoginButton{
+    background-color: #4640DE;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    transition: all 0.3s ease;
+    &:hover{
+        cursor: pointer;
+        background-color: transparent;
+        color: #4640DE;
+        outline: #4640DE solid 2px;
+        transform: scale(1.05);
+    }
+}
+.LogoStyle{
+    width: 120px;
+    height: auto;
+}
+.MenuIcon{
+    display: none;
+}
+@media (max-width: 880px) {
+    .ButtonBlock{
+        position: absolute;
+        width: 45%;
+        right: -0%;
+        top: 100%   ;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+    }
+    .ButtonClose{
+        display: none;
+
+    }
+    .MenuIcon{
+        display: block;
+        font-size: 24px;
+        color: #4640DE;
+        transition: all 0.3s ease;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    }
+    .CreateProfile{
+
+    }
+        .RegBlockContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+        height: 100%;
+    }
+    .CreateProfile{
+        padding: 0px 0px;
+    }
+
+}

@@ -1,0 +1,224 @@
+.DriversContainer{
+    width: 100%;
+    height: 50vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BottomLineDrivers{
+    width: 80%;
+    border-bottom: 1px solid #E0E0E0;   
+    margin-top: 30px;
+}
+.DriversBlockFlex{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.MyDrivers{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #25324B;
+}
+.MediaFlex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #969696;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.DriverBlock{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: #d8d8d8 1px solid;
+    transition: all 0.3s ease;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1.05);
+    }
+
+}
+.IconContainer{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(180, 180, 180);
+    object-fit: cover; 
+}
+.ButtonAllDrivers{
+    border: none;
+    background-color: transparent;
+    color: #4640DE;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.3s ease;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+.NameDrivers{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: -10px;
+}
+.ModalWindowDrivers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    width: 90%;
+    height: 40%;
+    background-color: #ffffff;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.ModalWindowDriversNo{
+    display: none;
+}
+.DriversBlockFlexModal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+}
+.DriverBlockModal{
+    width: 230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    border: #d8d8d8 1px solid;
+    transition: all 0.3s ease;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1.05);
+    }
+
+}
+.Closebutton{
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #25324B;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    position: absolute;
+}
+@media (max-width: 880px) {
+    .ModalWindowDrivers{
+        display: block;
+        position: absolute;
+        width: 90%;
+        padding: 20px;
+        height: 92%;
+        margin-top: 0%;
+        background-color: #ffffff;
+    }
+    .ModalWindowDriversNo{
+        display: none;
+    }
+    .Closebutton{
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #25324B;
+        width: 50px;
+        height: 50px;
+        top: -10px;
+        left: -10px;
+        font-size: 20px;
+        position: absolute;
+    }
+    .ClosebuttonNo{
+        display: none;
+    }
+    .DriversBlockFlexModal{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        gap: 15px;
+    }
+    .DriverBlockModal{
+        width: 180px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: #d8d8d8 1px solid;
+        transition: all 0.3s ease;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+
+    }
+    .backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    z-index: 1000;
+}
+.backdropno {
+    display: none;
+}
+}
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    z-index: 1000;
+}
+.backdropno {
+    display: none;
+}

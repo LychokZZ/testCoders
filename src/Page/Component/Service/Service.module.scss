@@ -1,0 +1,79 @@
+.ServiceContainer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20px;
+}
+.TitleBlockService{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.TitleService{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #25324B;
+}
+.PTextTitle{
+    font-size: 12px;
+    color: #969696;
+    margin-top: -15px;
+}
+.ServiceBlockFlex{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.ServiceBlock{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    &:hover{
+        
+        transform: scale(1.05);
+    }
+
+}
+.IconService{
+    color: #4640DE;
+}
+@media (max-width: 880px) {
+
+    .ServiceBlockFlex{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+    }
+    .ServiceBlock{
+        width: 150px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        gap: 5px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        &:hover{
+            
+            transform: scale(1.05);
+        }
+
+    }
+}
