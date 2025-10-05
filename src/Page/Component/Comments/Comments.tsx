@@ -50,7 +50,7 @@ const Comments = () => {
         }
     },[])
 
-
+    const Star = FaStar as unknown as React.FC;
     return (
         <div className={s.CommentsContainer}>
             <div className={s.FlexContainerForComments}>
@@ -76,7 +76,7 @@ const Comments = () => {
                             <p className={s.CommentTextStyle}>{e.Text}</p>
                             <div className={s.RateBlock}>
                                 {Array.from({ length: e.Rate }, (_, i) => (
-                                        <div key={i} className={s.Star}><FaStar/></div>
+                                    <li key={i} className={s.Star}><Star /></li>
                                 ))}
                             </div>
                         </div>
